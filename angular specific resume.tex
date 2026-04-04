@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaibhav Jain
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Vaibhav Jain} \\ \vspace{1pt}
+    Delhi, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8377044667 ~ \href{mailto:vaibhavjain301999@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vaibhavjain301999@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/vaibhav-j-868333113/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vaibhav-j-868333113}}  ~
+    \href{https://github.com/vaibhav3099}
+    {\raisebox{-0.2\height}\faGithub\ \underline{github.com/vaibhav3099}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSubHeadingListStart
+\resumeItemListStart
+  \resumeItem{Diverse portfolio of projects ranging from \textbf{SaaS}, \textbf{HRMS systems}, \textbf{Gmail plugins}, \textbf{Embedded Views}, \textbf{Blog Websites} while also working at \textbf{Architectural Level} of the systems.}
+  \resumeItem{\textbf{Took ownership}, and \textbf{single-handedly} led entire projects — \textbf{Full stack development}, direct client communication, impact based prioritization, and on-call issues.}
+  \resumeItem{I bring a rare blend of \textbf{technical expertise} and \textbf{product intuition} to build user-centric and scalable solutions that align with both engineering and product goals.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading{SpotDraft}{May 2022 -- Feb 2023}{Senior Frontend Engineer | \textit{Angular, Typescript, SCSS, Clean Architecture}}{Bangalore}
+\resumeItemListStart
+\resumeItem{Rearchitectured \textbf{'Prepare For Sign'} and \textbf{'Mobile Signing'} modules \textbf{from scratch with} \textbf{Clean Architecture}, enforcing \textbf{strict dependency rules}, and \textbf{creating Abstract Services for each injectable service}, ultimately making the whole module testable by 90\% coverage.
+}
+
+\resumeItem{\textbf{Created new Embedded App for PDF Signing} that enabled third-party users to securely sign contracts without logging into the system. Used \textbf{Nx Monorepos} setup, where codebase is \textbf{organized in apps and libraries}. . Coding time reduced by 95\% due to re-use of code present in libraries.
+}
+
+
+\resumeItem{\textbf{Developed the 'Signature Packets'} feature, enabling users to generate a unified contract for multiple uploads. \textbf{For performance used OnPush change detection strategy reducing re-renders}, ultimately performance increased by 70\%.
+}
+\resumeItem{Contributed to design system by \textbf{creating SCSS partials for typography, spacing, color schemes, SCSS mixins} and variables to enforce consistent \textbf{styling across 30+ components, }\textbf{significantly reducing  design debt}.}
+\resumeItem{Led code quality initiatives by \textbf{conducting rigorous code reviews} across 5+ member team and \textbf{establishing PR standards} for clarity. Also represented the team by presenting updates in company-wide Engineering All Hands sessions, showcasing team progress.
+}
+\resumeItemListEnd
+
+\resumeSubheading{Unthinkable Solutions}{July 2020 -- Feb 2022}{Full Stack Developer | Angular, React, Typescript, NodeJS, Express, PostgreSQL}{Gurugram}
+\resumeItemListStart
+\resumeItem{
+\textbf{Worked as Solo Contributor}, \textbf{Full-Stack development} in \textbf{Angular, NodeJs, Express and PostgreSQL}, handling everything from architecture, client communication, and on-call issue resolution to delivery.
+
+}
+
+\resumeItem{In \textbf{HRMS}, \textbf{created In-House Datatable from scratch} where everything \textbf{from column to cell is configurable}. User can pass a \textbf{parser callback} to parse the cell data as well. Extensively used \textbf{Typescript for configuration} and \textbf{JSON API} for parsing. Improved development speed  by 90\% across 10+ modules.}
+\resumeItem{
+\textbf{Implemented secure authentication} using Access and Refresh tokens \textbf{and built RBAC permission handling}. \textbf{API built with JWT, Express middlewares and Redis}. At frontend \textbf{used Route Guards}, \textbf{Services} to store permissions. Overall access-related reduced bugs by 90\%. 
+
+}
+\resumeItem{
+Created \textbf{'Batch Import Games'} that imports all the games listed in csv format, checks the validity of data at frontend, then backend imports all the data at once. \textbf{Used ExcelJS, convert-excel-to-json}.
+
+}
+\resumeItem{
+\textbf{Dynamic Invoice and Report Generation system }, enabling customizable PDF exports. \textbf{Used .pug files, html-pdf} dependencies at backend. It reduced manual effort by 70\%.
+
+}
+\resumeItemListEnd
+
+\resumeSubheading{TDG Labs}{Jan 2020 -- July 2020 }{Software Engineer | \textit{React, Redux, Material UI (MUI)}}{Delhi}
+\resumeItemListStart
+
+\resumeItem{\textbf{Developed a Sequence Automation module} that enabled users to create multi-step sales workflows (e.g., cold emails, follow-up calls), supports server-side pagination, advanced filtering and sorting. \textbf{Used Redux for state management and Redux-saga for side effect handling}, which contributed to 25\% increase in lead engagement
+}
+
+\resumeItem{\textbf{Introduced design system} and custom design tokens (\textbf{spacing, colors, typography}). Used \textbf{MUI Theme Provider}. Styling issues reduced by 30\% and resulted in a consistent UI.
+}
+
+\resumeItem{
+\textbf{Built custom Buttons, Snackbars, Modals, Loaders, Input fields, and Dropdowns} by customizing MUI primitives. Used \textbf{useStyles and makeStyles pattern} and \textbf{mapping the class with rule name} as provided by documentation}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------TECH STACK-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Javascript, Typescript, HTML/CSS, SCSS/SASS, SQL} \\
+\textbf{Architecture}{: Clean Architecture, Nx Monorepos} \\
+\textbf{Frontend}{: React, Redux, Angular, RxJs, NgRx, TestBed, RESTful APIs, Lazy loading, Angular Material, Bootstrap, MUI, Tailwind, Responsive Web Design, Storybook} \\
+\textbf{Backend}{: NodeJs, Express.js, PostgreSQL (knex), REST API development, Authentication (JWT), RBAC} \\
+\textbf{DevOps}{: Docker, CI/CD (GitHub Actions, GitLab CI, JIRA), Nginx, PM2} \\
+\textbf{Analytics}{: Datadog, Amplitude} \\
+\textbf{Version Control \& Tools}{: npm, Git, GitHub, GitLab, Bitbucket, Jira, Trello, Figma, ESLint, Prettier, Husky, Swagger (OpenAPI)} \\
+}}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Guru Gobind Singh Indraprastha University}{2016 -- 2020}{Bachelor of Technology in Computer Science CGPA - 9.34}{Delhi, India}
+\item{\textbf{CGPA | 9.34} [University top 10 list]}
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeSubheading{\href{https://drive.google.com/drive/u/1/folders/1dMF82uPbvHjp7ZFfwgRY36duLTu1IO10}{Moment of Honor \faExternalLink}}{Nov 2020}{Delivered MatchRider in 4 months, appreciated for aligning with business needs.}{}
+\resumeSubheading{\href{https://drive.google.com/drive/folders/1kl8TmB8SaVZ5YwXo8xHsloigwAdjzRR5}{Peer Recognition \faExternalLink}}{May 2022 -- Feb 2023}{Consistently recognized for quality work and setting standards.}{}
+\resumeSubHeadingListEnd
+
+\end{document}
