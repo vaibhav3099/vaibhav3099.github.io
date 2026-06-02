@@ -117,7 +117,7 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-Built diverse SaaS products : E-signature modules, Full scale Employee ERP systems, HR & Payroll Management System, Sports League Management Platform etc, in architecture first approach focusing on long-term ease of development, scalability, maintainability
+Built diverse SaaS products : E-signature modules, Full scale Employee ERP systems, HR \& Payroll Management System, Sports League Management Platform etc, in architecture first approach focusing on long-term ease of development, scalability, maintainability
 
 \resumeSubHeadingListStart
 \resumeItemListStart
@@ -133,53 +133,69 @@ Looking for role involving heavy architectural ownership with strong engineering
 \resumeSubHeadingListStart
 \resumeSubheading{SpotDraft}{May 2022 -- Feb 2023}{Senior Frontend Engineer | \textit{Angular, Typescript, SCSS, Clean Architecture}}{Bangalore}
 \resumeItemListStart
-\resumeItem{Rearchitectured \textbf{'Prepare For Sign'} and \textbf{'Mobile Signing'} modules \textbf{from scratch with} \textbf{Clean Architecture}, enforcing \textbf{strict dependency rules}, and \textbf{creating Abstract Services for each injectable service}, ultimately making the whole module testable by 90\% coverage.
+\resumeItem{
+\textbf{E-Signature Module}
+\newline - Problem: Existing signing workflows were not optimized for small screen devices, thus customer experience was not seamless.
+\newline - Action: Re-architected the signing workflows using modular architecture with modern mobile-first approach.
+\newline - Business Impacts: Strengthened the product's competitive positioning by delivering a modern mobile-device signing experience expected from enterprise e-signature solutions.
+
+\resumeItem{\textbf{Embeddable App for PDF Signing}
+\newline - Problem:  Customers could not offer contract signing within their own products and had to redirect users to SpotDraft.
+\newline - Action: Built an embeddable PDF signing application, enabling customers to integrate signing workflows into their own platforms.
+\newline - Business Impact: Unlocked new integration use cases for customers. A high-value customer requested this feature which it got saved from churning.
 }
 
-\resumeItem{\textbf{Created new Embedded App for PDF Signing} that enabled third-party users to securely sign contracts without logging into the system. Used \textbf{Nx Monorepos} setup, where codebase is \textbf{organized in apps and libraries}. . Coding time reduced by 95\% due to re-use of code present in libraries.
+\resumeItem{
+\textbf{Signature Packets}
+\newline - Problem: Users had to manage multiple contracts separately when handling multiple uploads.
+\newline - Action: Developed Signature Packets feature to generate a unified contract from multiple uploads
+\newline - Business Impact:  Hassle of managing each individual contract is resolved. 
 }
 
-
-\resumeItem{\textbf{Developed the 'Signature Packets'} feature, enabling users to generate a unified contract for multiple uploads. \textbf{For performance used OnPush change detection strategy reducing re-renders}, ultimately performance increased by 70\%.
+\resumeItem{
+\textbf{Code Quality and Standards}
+\newline - Problem: Code quality and review standards varied across the team.
+\newline - Action: Led code quality initiatives through rigorous code reviews, established PR standards.
+\newline - Engineering Impacts: Standardized engineering consistency, reduced review friction.
 }
-\resumeItem{Contributed to design system by \textbf{creating SCSS partials for typography, spacing, color schemes, SCSS mixins} and variables to enforce consistent \textbf{styling across 30+ components, }\textbf{significantly reducing  design debt}.}
-\resumeItem{Led code quality initiatives by \textbf{conducting rigorous code reviews} across 5+ member team and \textbf{establishing PR standards} for clarity. Also represented the team by presenting updates in company-wide Engineering All Hands sessions, showcasing team progress.
 }
 \resumeItemListEnd
 
 \resumeSubheading{Unthinkable Solutions}{July 2020 -- Feb 2022}{Full Stack Developer | Angular, React, Typescript, NodeJS, Express, PostgreSQL}{Gurugram}
 \resumeItemListStart
 \resumeItem{
-\textbf{Worked as Solo Contributor}, \textbf{Full-Stack development} in \textbf{Angular, NodeJs, Express and PostgreSQL}, handling everything from architecture, client communication, and on-call issue resolution to delivery.
 
-}
-
-\resumeItem{In \textbf{HRMS}, \textbf{created In-House Datatable from scratch} where everything \textbf{from column to cell is configurable}. User can pass a \textbf{parser callback} to parse the cell data as well. Extensively used \textbf{Typescript for configuration} and \textbf{JSON API} for parsing. Improved development speed  by 90\% across 10+ modules.}
-\resumeItem{
-\textbf{Implemented secure authentication} using Access and Refresh tokens \textbf{and built RBAC permission handling}. \textbf{API built with JWT, Express middlewares and Redis}. At frontend \textbf{used Route Guards}, \textbf{Services} to store permissions. Overall access-related reduced bugs by 90\%. 
-
+\textbf{Sports League Management System}
+\newline - Requirement: A Sport organization needed a centralized platform to manage leagues, teams, fixtures, referees with all features from Scheduling to Payments.
+\newline - Ownership: Worked as Solo Contributor, owned the project end to end until delivery, be it full stack development, architecture, client interaction, on-call issues and everything in between.
+\newline - Results: Developed key features - Match Scheduling, Refrees Payments, Notifications and Emailing, Batch updates etc.
 }
 \resumeItem{
-Created \textbf{'Batch Import Games'} that imports all the games listed in csv format, checks the validity of data at frontend, then backend imports all the data at once. \textbf{Used ExcelJS, convert-excel-to-json}.
-
+\textbf{HR Management System}
+\newline - Problem: Duplicated Data-tables implementations across modules.
+\newline - Action: Created \textbf{In-House Data-grid }from scratch, with configurable columns, cells using parser callbacks similar to ag-grid 
+\href{https://www.ag-grid.com/}{\faExternalLink}
+\newline - Impact: Enabled plug-and-play adoption across 10+ modules, faster feature delivery and reduced testing overhead.
 }
-\resumeItem{
-\textbf{Dynamic Invoice and Report Generation system }, enabling customizable PDF exports. \textbf{Used .pug files, html-pdf} dependencies at backend. It reduced manual effort by 70\%.
 
+\resumeItem{
+\textbf{Authentication and Permission Handling}
+\newline - Problem: As the application grew, managing user access across different roles became complex
+\newline - Action: Implemented a centralized authentication and authorization system using JWT, Access/Refresh Tokens, Redis, Express middlewares, RBAC, Route Guards, and permission-based UI grid
+\newline - Business Impact: Superadmin now can hide or enable different features to different type of users, as per business requirements.
 }
 \resumeItemListEnd
 
 \resumeSubheading{TDG Labs}{Jan 2020 -- July 2020 }{Software Engineer | \textit{React, Redux, Material UI (MUI)}}{Delhi}
 \resumeItemListStart
 
-\resumeItem{\textbf{Developed a Sequence Automation module} that enabled users to create multi-step sales workflows (e.g., cold emails, follow-up calls), supports server-side pagination, advanced filtering and sorting. \textbf{Used Redux for state management and Redux-saga for side effect handling}, which contributed to 25\% increase in lead engagement
-}
-
-\resumeItem{\textbf{Introduced design system} and custom design tokens (\textbf{spacing, colors, typography}). Used \textbf{MUI Theme Provider}. Styling issues reduced by 30\% and resulted in a consistent UI.
-}
-
 \resumeItem{
-\textbf{Built custom Buttons, Snackbars, Modals, Loaders, Input fields, and Dropdowns} by customizing MUI primitives. Used \textbf{useStyles and makeStyles pattern} and \textbf{mapping the class with rule name} as provided by documentation}
+\textbf{In-house UI Library}
+\newline- Problem: Fragmented UX due to inconsistent UI across the application. Client required consistent UI components on Material Theme.
+\newline- Action: Built a shared component library by customizing MUI primitives such as Buttons, Modals, Forms, Dropdowns etc.
+\newline- Business Impact: Consistent UI across all modules. Enabled faster feature delivery
+}
+
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
