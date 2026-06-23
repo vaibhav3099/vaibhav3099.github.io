@@ -20,6 +20,7 @@
 \usepackage{fontawesome5}
 \usepackage{fontawesome}
 \usepackage{multicol}
+% \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -73,7 +74,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -111,7 +111,7 @@
     \href{https://www.linkedin.com/in/vaibhav-j-868333113/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vaibhav-j-868333113}}  ~
     \href{https://github.com/vaibhav3099}
     {\raisebox{-0.2\height}\faGithub\ \underline{github.com/vaibhav3099}}
-    {\raisebox{-0.2\height}\faBlog\ \underline{https://medium.com/@vaibhavjain301999}}
+    {\raisebox{-0.2\height}\faBlog\ \textcolor{blue}{\underline{https://medium.com/@vaibhavjain301999}}}
     \vspace{-8pt}
 \end{center}
 
@@ -135,13 +135,29 @@
 \section{Experience}
 
 \resumeSubHeadingListStart
+
+% ----- changes
+\resumeSubheading{Open Source Contributions}{Present}{}{}
+\resumeItemListStart
+\resumeItem{
+\textbf{Obsidian - Spaced Repetition} - \href{https://github.com/st3v3nmw/obsidian-spaced-repetition/pull/1585}{\textcolor{blue}{\underline{feat: Enhance review notes sidebar}}}
+\newline - Problem: Poor visibility of overdue and due-today notes in large, nested review hierarchies.
+\newline - Action: Implemented status propagation and visual indicators at file and folder levels to surface note states at a glance.
+\newline - Improved navigation efficiency and reduced effort required to manage large review trees.}
+\resumeItemListEnd
+%---- changes end
+
+
+
 \resumeSubheading{SpotDraft}{May 2022 -- Feb 2023}{Senior Frontend Engineer | \textit{Angular, Typescript, SCSS, Clean Architecture}}{Bangalore}
 \resumeItemListStart
 \resumeItem{
-\textbf{E-Signature Module}
+\textbf{E-Signature Module} - \href{https://drive.google.com/file/d/1mk2LK5-s5LVKd_3G_H5tf5gIsxwKz5Bf/view}{\textcolor{blue}{\underline{workflow demo}}}
 \newline - Problem: Existing signing workflows were not optimized for small screen devices, thus customer experience was not seamless.
 \newline - Action: Re-architected the signing workflows using modular architecture with modern mobile-first approach.
 \newline - Business Impacts: Strengthened the product's competitive positioning by delivering a modern mobile-device signing experience expected from enterprise e-signature solutions.
+
+
 
 \resumeItem{\textbf{Embeddable App for PDF Signing}
 \newline - Problem:  Customers could not offer contract signing within their own products and had to redirect users to SpotDraft.
@@ -231,8 +247,8 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
 \resumeSubHeadingListStart
-\resumeSubheading{\href{https://drive.google.com/drive/u/1/folders/1dMF82uPbvHjp7ZFfwgRY36duLTu1IO10}{Moment of Honor \faExternalLink}}{Nov 2020}{Delivered MatchRider in 4 months, appreciated for aligning with business needs.}{}
-\resumeSubheading{\href{https://drive.google.com/drive/folders/1kl8TmB8SaVZ5YwXo8xHsloigwAdjzRR5}{Peer Recognition \faExternalLink}}{May 2022 -- Feb 2023}{Consistently recognized for quality work and setting standards.}{}
+\resumeSubheading{\href{https://drive.google.com/drive/u/1/folders/1dMF82uPbvHjp7ZFfwgRY36duLTu1IO10}{\textcolor{blue}{\underline{Outstanding Delivery Award \faExternalLink}}}}{Nov 2020}{Delivered MatchRider in just 4 months, appreciated for aligning with business needs.}{}
+\resumeSubheading{\href{https://drive.google.com/drive/folders/1kl8TmB8SaVZ5YwXo8xHsloigwAdjzRR5}{\textcolor{blue}{\underline{Engineering Impact Testimonials \faExternalLink}}}}{May 2022 -- Feb 2023}{Elevated engineering quality by establishing code review and development standards.}{}
 \resumeSubHeadingListEnd
 
 \end{document}
