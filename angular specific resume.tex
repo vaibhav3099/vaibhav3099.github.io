@@ -123,11 +123,11 @@
 \resumeSubHeadingListStart
 \resumeItemListStart
 
-\resumeItem{\textbf{SaaS Expertise} - Built E-signature modules, Full scale Employee ERP systems, HR \& Payroll Management System, Sports League Management Platform etc.
+\resumeItem{Senior Frontend \& Fullstack Engineer, Open Source Contributor.
 }
-\resumeItem{\textbf{AI Leverage} - Established clear architectural rules and coding patterns that enable developers deliver features faster.}
+\resumeItem{Built E-signature modules, B2B SaaS, ERPs, HR & Payroll Systems}
 
-\resumeItem{\textbf{Architectural Ownership} - Have owned end-to-end projects, from system design to delivery.
+\resumeItem{Established AI architecture rules for LLM tools (Claude, Copilot, ChatGPT), improving code correctness
 }
 
 \resumeItemListEnd
@@ -148,11 +148,20 @@
 \newline - Impact: Improved navigation efficiency and reduced effort required to manage large review trees.}
 \resumeItem{
 
-\textbf{Sports League Management System}
-\newline - Requirement: A Sport organization needed a centralized platform to manage leagues, teams, fixtures, referees with all features from Scheduling to Payments.
-\newline - Ownership: Worked as Individual Contributor, owned the project end to end until delivery, be it full stack development, architecture, client interaction, on-call issues and everything in between.
-\newline - Results: Developed key features - Match Scheduling, Refrees Payments, Notifications and Emailing, Batch updates etc.
+
+\textbf{Match Officials}
+\newline  Rate Charts \& Payments
+\newline - Problem: Referee compensation varied by league, and settlement rates were manual.
+\newline - Action: Created configurable Rate Charts involving referees fees, platform fees etc. Implemented 2 way settlement - collection from leagues and payouts to Referees while having a platform cut through bill.com APIs infrastructure.
+\newline - Results: Operators onboarded a new league by just assigning specific Rate Chart. Automated fee calculation, and 2 way settlement reduced 50\% of helpdesk tickets.
 }
+\newline
+\newline  Bulk Game Import
+\newline - Problem: Leagues scheduled entire season of games by hand one by one.
+\newline - Action: Built an import pipeline handling 1000s of rows per upload. Implemented inplace correction of rows rather than re-upload.
+\newline - Results: Cut season setup from hours of manual entry to a single upload. Performance holds as row counts scaled.
+}
+
 \resumeItemListEnd
 %---- changes end
 
@@ -163,8 +172,8 @@
 \resumeItem{
 \textbf{E-Signature Module} - \href{https://drive.google.com/file/d/1mk2LK5-s5LVKd_3G_H5tf5gIsxwKz5Bf/view}{\textcolor{blue}{\underline{workflow demo}}}
 \newline - Problem: Existing signing workflows were not optimized for small screen devices, thus customer experience was not seamless.
-\newline - Action: Re-architected the signing workflows using modular architecture with modern mobile-first approach.
-\newline - Business Impacts: Strengthened the product's competitive positioning by delivering a modern mobile-device signing experience expected from enterprise e-signature solutions.
+\newline - Action: Separated business logic and UI Layer following 'Clean Architecture' guidelines. Then built new mobile-first signing workflows.
+\newline - Business Impacts: Strengthened the product's competitive positioning by delivering a modern mobile-device signing experience expected from enterprise e-signature solutions, impacting 1000+ customers.
 
 
 
@@ -177,8 +186,8 @@
 \resumeItem{
 \textbf{Signature Packets}
 \newline - Problem: Users had to manage multiple contracts separately when handling multiple uploads.
-\newline - Action: Developed Signature Packets feature to generate a unified contract from multiple uploads
-\newline - Business Impact:  Hassle of managing each individual contract is resolved. 
+\newline - Action: Developed Signature Packets feature to unify upto 10 contracts into a single packet.
+\newline - Business Impact: Saved time to manage each individual contract.
 }
 
 \resumeItem{
@@ -196,15 +205,14 @@
 \resumeItem{
 \textbf{HR Management System}
 \newline - Problem: Duplicated Data-tables implementations across modules.
-\newline - Action: Created \textbf{In-House Data-grid }from scratch, with configurable columns, cells using parser callbacks similar to ag-grid 
-\href{https://www.ag-grid.com/}{\faExternalLink}
+\newline - Action: Created \textbf{In-House Angular Data-grid }from scratch, with configurable columns, cells using parser callbacks similar to ag-grid 
 \newline - Impact: Enabled plug-and-play adoption across 10+ modules, faster feature delivery and reduced testing overhead.
 }
 
 \resumeItem{
-\textbf{Authentication and Permission Handling}
-\newline - Problem: As the application grew, managing user access across different roles became complex
-\newline - Action: Implemented a centralized authentication and authorization system using JWT, Access/Refresh Tokens, Redis, Express middlewares, RBAC, Route Guards, and permission-based UI grid
+\textbf{Permission Grid Authorization}
+\newline - Problem: Access rules were hardcoded per module, so every new role / permission change required a code change and a release.
+\newline - Action: Built permission grid for Superadmin, using auth with JWT, Access/Refresh Tokens and Angular Route Guards at frontend.
 \newline - Business Impact: Superadmin now can hide or enable different features to different type of users, as per business requirements.
 }
 \resumeItemListEnd
@@ -250,8 +258,8 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
 \resumeSubHeadingListStart
-\resumeSubheading{\href{https://drive.google.com/drive/u/1/folders/1dMF82uPbvHjp7ZFfwgRY36duLTu1IO10}{\textcolor{blue}{\underline{Outstanding Delivery Award \faExternalLink}}}}{Nov 2020}{Delivered MatchRider in just 4 months, appreciated for aligning with business needs.}{}
-\resumeSubheading{\href{https://drive.google.com/drive/folders/1kl8TmB8SaVZ5YwXo8xHsloigwAdjzRR5}{\textcolor{blue}{\underline{Engineering Impact Testimonials \faExternalLink}}}}{May 2022 -- Feb 2023}{Elevated engineering quality by establishing code review and development standards.}{}
+\resumeSubheading{\href{https://drive.google.com/drive/u/1/folders/1dMF82uPbvHjp7ZFfwgRY36duLTu1IO10}{\textcolor{blue}{\underline{Outstanding Delivery Award}}}}{Nov 2020}{Delivered MatchRider in just 4 months, appreciated for aligning with business needs.}{}
+\resumeSubheading{\href{https://drive.google.com/drive/folders/1kl8TmB8SaVZ5YwXo8xHsloigwAdjzRR5}{\textcolor{blue}{\underline{Engineering Impact Testimonials}}}}{May 2022 -- Feb 2023}{Elevated engineering quality by establishing code review and development standards.}{}
 \resumeSubHeadingListEnd
 
 \end{document}
