@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -88,6 +88,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeRoleHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -105,13 +112,20 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Vaibhav Jain} \\ \vspace{1pt}
+    {\LARGE \scshape Vaibhav Jain} \\ \vspace{1pt}
+
+
+     Open Source $\mid$ Angular $\mid$ React $\mid$ Node $\mid$ Typescript $\mid$ Javascript 
+    
+    \vspace{3pt}
+
+    
         \href{https://itsvaibhavjain.com}
-    {\textcolor{blue}{\underline{itsvaibhavjain.com}}} \\ \vspace{4pt}
+    {\textcolor{blue}{\underline{itsvaibhavjain.com}}}
     \small  +91 8377044667 ~ \href{mailto:vaibhavjain301999@gmail.com}{\underline{vaibhavjain301999@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/vaibhav-j-868333113/}{ \underline{linkedin.com/in/vaibhav-j-868333113/}}  ~
+    \href{https://www.linkedin.com/in/vaibhav-j-868333113/}{ \underline{linkedin}}  ~
     \href{https://github.com/vaibhav3099}
-    {\underline{github.com/vaibhav3099}}
+    {\underline{github}}
     
 
     \vspace{-8pt}
@@ -120,18 +134,10 @@
 %-----------SUMMARY-----------
 \section{Summary}
 
-\resumeSubHeadingListStart
-\resumeItemListStart
 
-\resumeItem{Senior Frontend \& Fullstack Engineer, Open Source Contributor.
-}
-\resumeItem{Built E-signature modules, B2B SaaS, ERPs, HR & Payroll Systems}
+Built E-signature modules, B2B SaaS, ERPs, HR \& Payroll Systems. Contributing to Open Source. 
+Established AI architecture rules for LLM tools (Claude, Copilot, ChatGPT), improving code correctness
 
-\resumeItem{Established AI architecture rules for LLM tools (Claude, Copilot, ChatGPT), improving code correctness
-}
-
-\resumeItemListEnd
-\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -139,28 +145,19 @@
 \resumeSubHeadingListStart
 
 % ----- changes
-\resumeSubheading{Open Source \& Contract Software Engineer}{Feb 2023 -- Present}{}{}
+\resumeRoleHeading{Open Source \& Contract Software Engineer}{Feb 2023 -- Present}
 \resumeItemListStart
 \resumeItem{
 \textbf{Obsidian - Spaced Repetition} - \href{https://github.com/st3v3nmw/obsidian-spaced-repetition/pull/1585}{\textcolor{blue}{\underline{feat: Enhance review notes sidebar}}}
-\newline - Problem: Poor visibility of overdue and due-today notes in large, nested review hierarchies.
-\newline - Action: Implemented status propagation and visual indicators at file and folder levels to surface note states at a glance.
-\newline - Impact: Improved navigation efficiency and reduced effort required to manage large review trees.}
+\newline
+In large, nested review trees, reviewers struggled to identify overdue and due-today notes. Implemented file/folder level visual indicators, enabling 500k+ users to review notes at a glance.
 \resumeItem{
 
 
 \textbf{Match Officials}
-\newline  Rate Charts \& Payments
-\newline - Problem: Referee compensation varied by league, and settlement rates were manual.
-\newline - Action: Created configurable Rate Charts involving referees fees, platform fees etc. Implemented 2 way settlement - collection from leagues and payouts to Referees while having a platform cut through bill.com APIs infrastructure.
-\newline - Results: Operators onboarded a new league by just assigning specific Rate Chart. Automated fee calculation, and 2 way settlement reduced 50\% of helpdesk tickets.
-}
 \newline
-\newline  Bulk Game Import
-\newline - Problem: Leagues scheduled entire season of games by hand one by one.
-\newline - Action: Built an import pipeline handling 1000s of rows per upload. Implemented inplace correction of rows rather than re-upload.
-\newline - Results: Cut season setup from hours of manual entry to a single upload. Performance holds as row counts scaled.
-}
+Manual fee settlement of Referees limited scalability. Developed Rate Charts for fee calculation and implemented 2 way collection / payouts using bill.com APIs. Automated fee calculation reduced around 50 \% of helpdesk tickets
+}}
 
 \resumeItemListEnd
 %---- changes end
@@ -171,31 +168,11 @@
 \resumeItemListStart
 \resumeItem{
 \textbf{E-Signature Module} - \href{https://drive.google.com/file/d/1mk2LK5-s5LVKd_3G_H5tf5gIsxwKz5Bf/view}{\textcolor{blue}{\underline{workflow demo}}}
-\newline - Problem: Existing signing workflows were not optimized for small screen devices, thus customer experience was not seamless.
-\newline - Action: Separated business logic and UI Layer following 'Clean Architecture' guidelines. Then built new mobile-first signing workflows.
-\newline - Business Impacts: Strengthened the product's competitive positioning by delivering a modern mobile-device signing experience expected from enterprise e-signature solutions, impacting 1000+ customers.
+\newline
+Small-screen signing workflows delivered a limited customer experience. Rearchitectured the workflow in mobile-first approach, by separating Business logic and UI layer following ‘Clean Architecture’ guidelines. Strengthened the product’s competitive positioning by delivering a modern mobile-device signing experience, impacting 1000+ paid customers.
 
 
 
-\resumeItem{\textbf{Embeddable App for PDF Signing}
-\newline - Problem:  Customers could not offer contract signing within their own products and had to redirect users to SpotDraft.
-\newline - Action: Built an embeddable PDF signing application, enabling customers to integrate signing workflows into their own platforms.
-\newline - Business Impact: Unlocked new integration use cases for customers. A high-value customer requested this feature which it got saved from churning.
-}
-
-\resumeItem{
-\textbf{Signature Packets}
-\newline - Problem: Users had to manage multiple contracts separately when handling multiple uploads.
-\newline - Action: Developed Signature Packets feature to unify upto 10 contracts into a single packet.
-\newline - Business Impact: Saved time to manage each individual contract.
-}
-
-\resumeItem{
-\textbf{Code Quality and Standards}
-\newline - Problem: Code quality and review standards varied across the team.
-\newline - Action: Led code quality initiatives through rigorous code reviews, established PR standards.
-\newline - Engineering Impacts: Standardized engineering consistency, reduced review friction.
-}
 }
 \resumeItemListEnd
 
@@ -204,16 +181,8 @@
 
 \resumeItem{
 \textbf{HR Management System}
-\newline - Problem: Duplicated Data-tables implementations across modules.
-\newline - Action: Created \textbf{In-House Angular Data-grid }from scratch, with configurable columns, cells using parser callbacks similar to ag-grid 
-\newline - Impact: Enabled plug-and-play adoption across 10+ modules, faster feature delivery and reduced testing overhead.
-}
-
-\resumeItem{
-\textbf{Permission Grid Authorization}
-\newline - Problem: Access rules were hardcoded per module, so every new role / permission change required a code change and a release.
-\newline - Action: Built permission grid for Superadmin, using auth with JWT, Access/Refresh Tokens and Angular Route Guards at frontend.
-\newline - Business Impact: Superadmin now can hide or enable different features to different type of users, as per business requirements.
+\newline
+Repeated data-table implementations across modules increased development and testing overhead. Built a reusable Angular data-grid from scratch, with configurable columns, cells using parser callbacks (similar to ag-grid). Enabled plug and play adoption across 10+ modules, accelerating feature delivery
 }
 \resumeItemListEnd
 
@@ -222,9 +191,8 @@
 
 \resumeItem{
 \textbf{In-house UI Library}
-\newline- Problem: Fragmented UX due to inconsistent UI across the application. Client required consistent UI components on Material Theme.
-\newline- Action: Built a shared component library by customizing MUI primitives such as Buttons, Modals, Forms, Dropdowns etc.
-\newline- Business Impact: Consistent UI across all modules. Enabled faster feature delivery
+\newline
+Inconsistent UI across application modules. Built a reusable component library( Buttons, Modals, Forms, Dropdowns etc) buit on top of React Material UI aka MUI. Thereby resulting in consistent UI across all modules
 }
 
 \resumeItemListEnd
@@ -253,7 +221,7 @@
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading{Guru Gobind Singh Indraprastha University}{2016 -- 2020}{Bachelor of Technology in Computer Science CGPA - 9.34 out of 10}{Delhi, India}
+\resumeSubheading{Guru Gobind Singh Indraprastha University}{2016 -- 2020}{Bachelor of Technology in Computer Science}{Delhi, India}
 \item{\textbf{CGPA | 9.34 out of 10} [University top 10 list]}
 
 \resumeSubHeadingListEnd
